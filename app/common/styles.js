@@ -1,20 +1,39 @@
 import {StyleSheet} from 'react-native';
+import { colors } from './colors';
 
 export const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  headerButtonText:{
+    fontSize:20,
+    color:colors.theme
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+  listItem:{
+    marginLeft: 10,
+    paddingTop: 5,
+    borderBottomWidth: 0.5
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
+  listItemText:{
+    fontSize: 15, 
+    color: 'black'
   },
-  highlight: {
-    fontWeight: '700',
+  contactInfoHeader:{
+    backgroundColor: '#EEE8E8',
+    paddingStart: 12
   },
+  contactInfoHeaderText:{
+    fontSize: 18, 
+    fontWeight: 'bold', 
+    color: 'black'
+  },
+  contactInfoInputHeader:{
+    fontSize: 15,
+    color: 'black',
+    width: '25%'
+  },
+  contactInfoInput: {
+    borderWidth: 0.5,
+    fontSize: 13,
+    height: 35,
+    width: '70%',
+    margin: 10,
+  }
 });
